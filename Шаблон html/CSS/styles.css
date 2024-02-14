@@ -5,13 +5,11 @@
 }
 header {
     width: 100%;
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-    overflow:initial;
+    height: 100px;
     background-color: #fc3f3f;
     color: rgb(0, 0, 0);
     border-bottom: 4px solid #fdb347;
+
 }
 .header_name {
     display: flex;
@@ -21,17 +19,22 @@ header {
 .header_text {
     font-family: 'Lobster', sans-serif;
     font-size: 3vw;
-    margin-left: 3vw;
+    margin-left: 15vw;
+
 }
 .icon_btn {
     background-color: #fc3f3f;
     border: none;
-    color: white;
+    color: rgb(0, 0, 0);
     height: 100%;
-    font-size: 2vw;
+    font-size: 1.5vw;
     cursor: pointer;
     padding-left: 5px;
     padding-right: 5px;
+
+}
+.menu {
+
 }
 .icon_btn:hover {
     background-color: #fa2424;    
@@ -40,7 +43,7 @@ header {
     width: 100%;
     height: 100%;
     display: flex;
-min-height: 490px;
+min-height: 750px;
     justify-content: center;
 
     flex-wrap: wrap;
@@ -116,7 +119,6 @@ min-height: 490px;
 .vkorzinu {
 }
 .btn {
-
     color: rgb(15, 19, 241);
     font-size: 25px;
     cursor: pointer;
@@ -127,14 +129,16 @@ min-height: 490px;
     border: none;
 }
 .btn:hover {
-    background-color: rgb(8, 114, 184);
+    
+        border-radius: 5px;
     color: rgb(226, 240, 99);
-    border-radius: 5px;
+    background-color: rgb(8, 114, 184);
     border-color: blue;
 }
 footer {
 width: 100%;
-height: 100px;
+height: 150px;
+
 background-color: #fc3f3f;
 border-top: 4px solid #fdb347;
 
@@ -143,32 +147,160 @@ border-top: 4px solid #fdb347;
 position: relative;
 display: flex;
 justify-content: space-between;
-border: 2px solid green;
 width: 100%;
 height: 100%;
+padding-top: 10px;
 }
 .grafik {
-    border: 2px solid rgb(44, 12, 63);
-    width: 30%;
+
+    width: 12%;
     height: 100%;
-    margin-left: 10px;
+    margin-left: 40px;
+    color: rgb(0, 0, 0);
+    
+}
+.grf {
+    display: flex;
+    justify-content: space-between;
 }
 .social {
-    border: 2px solid rgb(44, 12, 63);
+
     width: 30%;
     height: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-right: 10px;
 }
 .social img {
-    width: 35px;
-    height: 35px;
+    width: 2.5vw;
+    height: 2.5vw;
     object-fit: contain;
 }
+.bold_text {
+    font-size: 1vw;
+    font-weight: 700;
+
+}
+.grf p {
+    font-size: 1vw;
+}
+.grafik_title {
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: 700;
+}
 .contacts {
-    border: 2px solid rgb(44, 12, 63);
-    width: 30%;
+
+    width: 35%;
     height: 100%;
+    color: rgb(0, 0, 0);
+    position: relative;
+    
+}
+.icon_ctnt {
+    
+}
+.contn {
+display: flex;
+justify-content: space-between;
+}
+.cont-title {
+    text-align: center;
+    color: rgb(4, 4, 4);
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+.icon_ctnt  img, .txt_ctnt img {
+    width: 1.5vw;
+    height: 1.5vw;
+    object-fit: contain;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.tak {
+    font-size: 1.5vw;
+    padding-bottom: 15px;
+
+}
+.poisk {
+    margin-bottom: 5px;
+    display: flex;
+}
+.poisk input {
+    width: 35vw;
+    height: 2vw;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: none;
+    border: none;
+    margin-left: 15px;
+}
+input::placeholder {
+    font-size: 1.3vw;
+    padding-left: 10px;
+    
+}
+.poisk-button img {
+    width: 2vw;
+    height: 1.5vw;
+    margin: 0;
+}
+.poisk-btn-ico {
+    width: 3vw;
+    background-color: bisque;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.poisk-btn-ico:hover {
+    cursor: pointer;
+    background-color: rgb(8, 114, 184);
+    color: #e5fb69;
+}
+.porivn {
+    bottom: 5px;
+    width: 2vw;
+    height: 2vw;
+}
+.porivn img {
+    width: 100%;
+    height: 100%;
+}
+.porivn:hover, .like_btn_img:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
+.top_header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+.bottom_header {
+display: flex;
+    justify-content:center;
+    margin: 0;
+    padding: 0;
+    gap: 10vw;
+
+}
+.like_btn img {
+width: 100%;
+height: 100%;
+color: #ffffff;
+background-color:#fc3f3f;
+display: flex;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+
+
+}
+.like {
+width: 2vw;
+height: 2vw;
+margin-left: 15px;
+
 }
